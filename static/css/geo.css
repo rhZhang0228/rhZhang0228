@@ -1,0 +1,15 @@
+.head{ background-color: #208C5B;}
+.content{width:100%;}
+.content p,h4{line-height:30px;font-family:微软雅黑;}
+.content table tr td{text-align:center;}
+.figuret{font-size:15px;text-align:center;}
+.lab1{margin-left:220px;float:left;width:80px;height:100%;text-align:center;background-color:#208C5B;color:#fff;}
+.lab2{margin-right:220px;float:right;width:80px;height:100%;text-align:center;background-color:#208C5B;color:#fff;}
+.lab1:hover{opacity: 0.8;color:#fff;}
+.lab2:hover{opacity: 0.8;color:#fff;}
+
+.commentBox h3 {color:#634322; background:#e9e5df; padding:8px 15px; text-align:left; font-size: 16px;}
+.comment b{color:#01553D; font-size:16px; display:block; margin:5px 0;}
+.comment b span {color:#01553D; font-size:14px; margin-left:20px;}
+.commentBox button {float:right; margin-left:20px; padding:5px 30px; background:#01553D; border-radius:5px; color:#fff; font-size:16px;}
+.commentBox button:hover {color:#fff; background:#047857}

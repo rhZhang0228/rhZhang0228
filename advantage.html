@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设计开发</title>
+    <style>
+        #body{
+
+            font-size:12px;
+
+            background-image:url(static/assets/img/blog-section-left-bg.png);
+
+            background-repeat:repeat-x;
+            background-size: 100% 100%;
+
+            width: 100%;
+            height: 100%;
+            COLOR: #0C2B30;
+
+        }
+        #myEcharts {
+            width: 700px;
+            height: 600px;
+            border: solid 1px red;
+            margin: 0 auto;}
+        #content{
+            width: 200px;
+            height: 100px;
+        }
+        .a-upload {
+            padding: 4px 10px;
+            height: 30px;
+            line-height: 20px;
+            position: relative;
+            cursor: pointer;
+            color: #888;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1
+        }
+        .a-upload  input {
+            position: absolute;
+            font-size: 100px;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer
+        }
+        .a-upload:hover {
+            color: #444;
+            background: #eee;
+            border-color: #ccc;
+            text-decoration: none
+
+        }
+        .ben {
+            width:1000px
+            height:300px
+            border: solid 1px red;
+        }
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+
+    .goods {
+
+            border: 1px solid #ccc;
+
+            height: 350px;
+
+            width: 33.333%;
+
+            float: left;
+
+            box-sizing:border-box;
+
+            padding:10px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="static/css/col3.css" type="text/css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/sentiment.css"/>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=OF5fGEzn9dxVFvnarSdWqdu5UpltidFx"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bmap.js"></script>
+    <script src="static/assets/js/jquery-3.5.1.min.js"></script>
+    <!--  Bootstrap JS  -->
+    <script src="https://cdn.bootcss.com/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="static/assets/js/bootstrap.js"></script>
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <!--  Easing JS  -->
+    <script src="static/assets/js/jquery.easing.min.js"></script>
+    <!--  Typed JS  -->
+    <script src="static/assets/js/typed.js"></script>
+    <!--  Wow JS  -->
+    <script src="static/assets/js/wow.min.js"></script>
+    <!--  CountTo JS  -->
+    <script src="static/assets/js/jquery.countTo.js"></script>
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/1.10.2/jquery.min.js"></script>
+    <!--  Isotope JS  -->
+    <script src="static/assets/js/isotope.pkgd.min.js"></script>
+    <!--  Magnific Popup JS  -->
+    <script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+    <!--  Owl Carousel JS  -->
+    <script src="static/assets/js/owl.carousel.min.js"></script>
+    <!--  Custom JS  -->
+    <script src="static/assets/js/roiton.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Roiton"/>
+    <meta name="keywords" content="Responsive, HTML5 template, Retrina Group, Multi Page, Landing, Startup, Business, Company, Corporate, Creative, Freelancers">
+    <meta name="author" content="Retrina Group" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <!-- SITE TITLE -->
+    <title>设计开发</title>
+
+    <!--  FavIcon  -->
+    <link rel="shortcut icon" href="static/assets/img/favicon.ico">
+    <link rel="stylesheet" href="static/assets/css/col3.css" type="text/css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/base.css" />
+    <link href="static/css/history.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="static/css/measure.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/assets/css/bootstrap.css">
+    <!-- Animated  CSS  -->
+    <link rel="stylesheet" href="static/assets/css/animated.css">
+    <!-- LineIcon Css -->
+    <link rel="stylesheet" href="static/assets/css/LineIcons.css">
+    <!--  Magnific Popup CSS  -->
+    <link rel="stylesheet" href="static/assets/css/magnific-popup.css">
+    <!--  Owl Carousel CSS  -->
+    <link rel="stylesheet" href="static/assets/css/owl.carousel.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target="#scrollspy" data-offset="61">
+
+
+<!-- PRELOADER
+============================================= -->
+<div id="loader-wrapper">
+    <div id="loader">
+        <div class="cssload-spin-box"></div>
+    </div>
+</div>
+
+<!-- PAGE CONTENT
+============================================= -->
+<div id="page-content" class="page-content demo-01">
+
+    <!-- HEADER
+    ============================================= -->
+    <header id="header" class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light roiton-menu">
+            <div class=container>
+
+                <!-- LOGO NAME -->
+                <a href="index.html" class="navbar-brand">Home </a>
+
+
+                <!-- Responsive Menu Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-bar-icon"><i class="lni-menu"></i></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Dropdown Link -->
+                        <!-- Dropdown Link -->
+
+                        <!-- Dropdown Link -->
+
+                        <!-- Dropdown Link -->
+                        <li class="nav-item nl-simple"><a class=nav-link href="introduce.html" target="blank">项目背景</a></li>
+                        <li class="nav-item nl-simple"><a class=nav-link href="work.html" target="blank">核心算法</a></li>
+
+                        <!-- Button -->
+
+
+
+                    </ul>
+
+                </div>  <!-- End Navigation Menu -->
+
+            </div>  <!-- End container -->
+
+        </nav>  <!-- End navbar -->
+    </header>
+    <section id="page-hero" class="hero py-6">
+
+        <div class="hero-center">
+
+            <!-- breadcrumb Start -->
+            <div class="container">
+                <div class="row hero-content text-center">
+
+                    <div class="col-lg-9 mx-auto">
+                        <h2>设计开发</h2>
+                        <nav aria-label="breadcrumb" class="d-flex flex-column align-items-center text-center">
+                            <ol class="breadcrumb mb-0 bg-transparent p-0">
+                                <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Design</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>  <!-- breadcrumb End -->
+
+        </div>  <!-- END HERO-CENTER -->
+    </section>   <!-- END HERO -->
+
+
+
+    <!-- PORTFOLIO
+   ============================================= -->
+    <section id="about" class="about video py-6">
+        <div class="container">
+
+            <div class="about-bg-graphics">
+                <img src="static/assets/img/about-bg.png" alt="/">
+            </div>
+
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>
+                        1.实现在常态化疫情防控下，社区监控中目标的检测
+                    </h2>
+                    <br>
+
+                    <p>
+                        考虑到社区疫情防控对实时性要求更高，且最近几年YOLO发展迅猛，在准确度和识别速度上都已经有了质的提升，因此本项目选择采用YOLOv5作为目标检测的主要模型。YOLOv5网络是一个将输入神经网络中的新的图片分成网格，假设对象的正确标定框的中心点落在某个网格中时，则选用该网格来识别对象。
+                    </p>
+                    <p>
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4 style="text-align: center">
+                        yolo示意图
+                    </h4>
+                    <br>
+                    <img src="static/images/yolo.jpg " width="600">
+
+                </div>
+
+            </div>  <!-- End row -->
+
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <p></p>
+                    <h2>
+                        2.实现多镜头协同追踪感染者密切接触人群，绘制目标行进路线地图
+                    </h2>
+                    <p>
+                        DeepSort中使用更加可靠的度量来代替关联度量，能够使用CNN网络在大规模行人数据集进行训练，并提取特征，增加网络对遗失和障碍的鲁棒性。综因此合性能和效率，DeepSort算法比较适合当前场景。</p>
+                    <p>
+                        使用DeepSort目标跟踪算法来实现单摄像头下的多目标跟踪，首先根据匈牙利算法解决预测的目标状态与新增的状态的关联问题。然后利用卡尔曼滤波器（赋予当前预测值与测量值不同的权重来计算当前的值，并进行迭代计算）预测更新轨道状态，并以预测出的状态与下一视频帧到来的新目标状态的马氏距离和余弦距离（马氏距离：计算待衡量向量间的协方差距离，可以有效的衡量两者间的相似度；余弦距离：将向量平移到一个特定的空间中，然后计算夹角的余弦值，并进行归一化处理）来表示运动的匹配程度，减少标识切换的出现，使目标跟踪的效果大大提升。
+                    </p>
+                    <div align="center">
+                    <img src="static/images/路径图.png " height="500" width="1000"></div>
+
+                    <p></p>
+                    <h2>
+                        3.密切接触人群分级化管理
+                    </h2>
+                    <p>
+                        由于待定密切接触人群数量较大，且不一定具备密切接触的条件，故使用决策树方法，按照待定密切接触人员与疑似病例距离、同行时间、是否佩戴口罩并结合国家对密切接触者的定量标准，将待定密切接触人群分为4个等级，分别是：一级、红色（与疑似病例距离小于1米，同行时间大于5秒）；二级、紫色（距离小于1米）；三级、蓝色（距离大于1米，未佩戴口罩/一级密接人群的接触人群）；四级、绿色（距离大于1米，佩戴口罩）详细分级图如下所示：</p>
+
+                    <div align="center">
+                        <img src="static/images/分级图.png " height="500" width="1000"></div>
+
+                    <p></p>
+                    <h2>
+                        4.实现对密切接触者进行身份识别
+                    </h2>
+                    <p>
+                        在对密切接触人员进行分级后，使用成熟的虹软视觉开放平台API对确定的密接人员进行身份识别和身份信息的查询，并将信息进行AES加密导出，方便防疫工作者点对点的对不同等级的密切接触者采取分层管理和流行病学调查。</p>
+
+                    <div align="center">
+                        <img src="static/images/身份认证.png " height="500" width="1000"></div>
+
+
+</div>
+
+                </div>
+            </div>
+
+        </div>  <!-- End container -->
+    </section> <!-- END ABOUT -->
+
+
+
+    <!-- TEAM
+    ============================================= -->
+
+
+
+    <!-- Return to Top -->
+    <a href="javascript:void(0)" class="return-to-top"><i class="lni-chevron-up"></i></a>
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.head{background-color:#E58172;}
+.content{width:100%;}
+.content p,h4,h5{line-height:30px;font-family:微软雅黑;}
+.map{float:right;width:110px;margin:10px 20px 0 0;background-color:#E58172;box-shadow: 2px 2px 5px rgba(0,0,0,0.9);}
+
+.commentBox h3 {color:#E58172; background:#FFF5EE; padding:8px 15px; text-align:left; font-size: 16px;}
+.comment b{color:#E58172; font-size:16px; display:block; margin:5px 0;}
+.comment b span {color:#E58172; font-size:14px; margin-left:20px;}
+.commentBox button {float:right; margin-left:20px; padding:5px 30px; background:#E58172; border-radius:5px; color:#fff; font-size:16px;}
+.commentBox button:hover {color:#fff; background:#E9967A;}
